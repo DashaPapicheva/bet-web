@@ -1,0 +1,434 @@
+@font-face {
+	font-family: 'Panton';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Crimson Text'),
+		url('font/Panton-Bold.woff') format('woff'),
+		url('font/Panton-Bold.ttf') format('ttf'),
+		url('font/Panton-Bold.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'Panton';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Crimson Text'),
+		url('font/Panton-Bold.woff') format('woff'),
+		url('font/Panton-Bold.ttf') format('ttf'),
+		url('font/Panton-Bold.eot') format('eot');
+}
+
+
+
+body {
+    width: 100%;
+	height: 100vh;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	background-image: url(img/bg2.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.a_img1{
+position: absolute;
+left: 10px;
+width: 26%;
+height: auto;
+bottom: 30px;
+}
+
+
+.a_img2{
+	position: absolute;
+right: -10px;
+width: 28%;
+height: auto;
+bottom: 30px;
+}
+
+.wraper {
+    width: 100%;
+    max-width: 50% ;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.img_wraper{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+.img_wraper a {
+	width: 23%;
+
+}
+
+.img_wraper a img {
+	width: 100%;
+	position: relative;
+	z-index: 11;
+	transition: all 0.5s;
+}
+
+.text1{
+	width: 54%;
+	margin: 20px auto;
+	text-align: center;
+height: 37px;
+color: #f1dd3e;
+font-family: Panton;
+font-size: 65px;
+font-weight: normal;
+line-height: 15.71px;
+text-shadow: 0px 4px 0px black;
+}
+
+.wraper_text {
+	background: linear-gradient(to top, #e86200 0%, #fedd00 100%);
+}
+.text2{
+	width: 66%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	
+
+}
+.text3{
+	width: 54%;
+	margin: 40px auto;
+	text-align: center;
+height: 37px;
+color: #f1dd3e;
+font-family: Panton;
+font-size: 86px;
+font-weight: normal;
+line-height: 15.71px;
+text-shadow: 0px 6px 0px black;
+position: relative;
+
+}
+.text1 {
+	position: relative;
+	z-index: 32;
+}
+.text1::before{
+	display: block;
+    content: "";
+    position: absolute;
+    width: 130%;
+    margin: 0 auto;
+    height: 0%;
+    top: 98px;
+    left: -12%;
+    bottom: 0px;
+    box-shadow: -39px 13px 92px 46px rgb(0 0 0 / 98%);
+    z-index: 30;
+}
+.text2{
+	position: relative;
+	z-index: 32;
+}
+
+.text3{
+	position: relative;
+	z-index: 32;
+}
+
+
+.button {
+	color: white;
+    display: inline-block;
+    margin: 80px auto;
+    padding: 49px 61px;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 25.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Panton';
+    background-image: url(img/but.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+	font-weight: normal;
+	transition: all 0.5s ;
+	border-radius: 39px;
+	border: 4px solid white;
+
+}
+
+.button:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: all 0.5s ;
+	box-shadow: 0px 0px 20px 8px #ffffff80;
+}
+.img_wraper a {
+	position: relative;
+}
+.img_wraper a .light{
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	top: 35%;
+    left: 35%;
+}
+
+.img_wraper a:hover .light{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.5s;
+    background-color: #ffffff80;
+    box-shadow: 1px 20px 20px 40px #ffffff91;
+    z-index: 10;
+}
+
+.img_wraper a:hover img {
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 2800px) {
+	.wraper{
+		max-width: 60%;
+	}
+	
+	
+
+}
+@media screen and (max-width: 2600px) {
+	.a_img1{
+		width: 30%;
+	}
+	.a_img2{
+		width: 32%;
+	}
+	.wraper{
+		max-width: 65%;
+	}
+	
+	
+
+}
+
+@media screen and (max-width: 2400px) {
+	.wraper{
+		max-width: 70%;
+	}
+
+	.a_img1{
+		width: 32%;
+	}
+	.a_img2{
+		width: 35%;
+	}
+	
+	
+
+}
+
+@media screen and (max-width: 2200px) {
+	.wraper{
+		max-width: 60%;
+	}
+
+
+}
+
+
+@media screen and (max-width: 2000px) {
+	.wraper{
+		max-width: 60%;
+	}
+	.text3{
+		font-size: 66px;
+	}
+
+	.button{
+		margin: 20px auto;
+		font-size: 64px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 1800px) {
+	.img_wraper{
+		padding-top: 90px;
+	}
+	.wraper{
+		max-width: 50%;
+	}
+	.text1{
+		font-size: 40px;
+	}
+	.text3{
+		font-size: 50px;
+	}
+
+	.button{
+		margin: 20px auto;
+		font-size: 54px;
+		padding: 34px 61px;
+	}
+
+	.a_img1{
+		width: 28%;
+	}
+	.a_img2{
+		width: 30%;
+	}
+
+
+}
+@media screen and (max-width: 1800px) {
+	.img_wraper{
+		padding-top: 40px;
+	}
+	.wraper{
+		max-width: 60%;
+	}
+	.text1{
+		font-size: 40px;
+	}
+	.text3{
+		font-size: 50px;
+	}
+
+	.button{
+		margin: 20px auto;
+		font-size: 54px;
+		padding: 34px 61px;
+	}
+
+	.a_img1{
+		width: 30%;
+	}
+	.a_img2{
+		width: 32%;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 1094px) {
+	.a_img1{
+		display: none;
+	}
+	.a_img2{
+		display: none;
+	}
+	body {
+	 background-image: none;
+	}
+	
+	.wraper {
+	max-width: 100%;
+		background-size: cover;
+		background-image: url(img/bg.jpg);
+
+	}
+
+}
+
+
+@media screen and (max-width: 1094px) {
+
+
+	.img_wraper{
+		width: 70%;
+	}
+	.text1{
+		width: 70%;
+	}
+	.text2{
+		width: 70%;
+	}
+	.text3{
+		width: 70%;
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+	.a_img1{
+		display: block;
+	    width: 32%;
+	}
+	.a_img2{
+		display: block;
+		width: 35%;
+	}
+	.wraper {
+		background-image: url(img/bg2.jpg);
+	}
+
+	.img_wraper{
+		width: 90%;
+		padding-top: 60px;
+	}
+	.text1{
+		width: 90%;
+		font-size: 27px;
+	margin-bottom: 0px;
+	}
+	.text2{
+		width: 90%;
+	}
+	.text3{
+		width: 90%;
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+
+
+	.button{
+		font-size: 40px;
+		padding: 30px 61px;
+		border-radius: 26px;
+		position: relative;
+		z-index: 300;
+	}
+	
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+.button{
+	background-size: contain;
+	font-size: 28px;
+    padding: 23px 64px;
+}
+
+
+}
